@@ -1,0 +1,1 @@
+# execute `tsc -w` for workspace if it contains tsconfig.json file.

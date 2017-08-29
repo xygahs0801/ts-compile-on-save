@@ -1,8 +1,8 @@
 {
     "name": "ts-compile-on-save",
     "displayName": "ts-compile-on-save",
-    "description": "",
-    "version": "0.0.1",
+    "description": "execute tsc -w for workspace if workspace contains tsconfig.json file.",
+    "version": "0.0.3",
     "publisher": "liuwei",
     "engines": {
         "vscode": "^1.15.0"
@@ -22,6 +22,13 @@
             }
         ]
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xygahs0801/ts-compile-on-save.git"
+    },
+    "bugs": {
+        "url": "https://github.com/xygahs0801/ts-compile-on-save/issues"
+    },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
         "compile": "tsc -watch -p ./",
@@ -29,10 +36,10 @@
         "test": "node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
+        "@types/mocha": "^2.2.32",
         "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
+        "mocha": "^2.3.3",
+        "typescript": "^2.0.3",
+        "vscode": "^1.1.5"
     }
 }
